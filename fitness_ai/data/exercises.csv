@@ -1,0 +1,11 @@
+Title,Desc,Type,BodyPart,Equipment,Level,Rating,Excluded_Injuries
+Banded crunch,"Lie on your back, anchor the band overhead, and crunch by drawing the ribs toward the pelvis.",Strength,Abdominal,Bands,Beginner,8.6,none
+Partner plank,"Hold a plank while a partner adds band resistance around the torso.",Strength,Abdominal,Bands,Intermediate,7.4,"wrist, shoulder"
+Bench barbell rollout,"Kneel in front of a bench and roll a barbell forward under control before returning.",Strength,Abdominal,Barbell,Beginner,8.1,"lower_back, wrist"
+Barbell Side Bend,"Stand tall with a barbell and bend laterally through a controlled range of motion.",Strength,Abdominal,Barbell,Beginner,7.2,lower_back
+Advanced Kettlebell V,"Perform a V-up pattern while holding a kettlebell for added resistance.",Strength,Abdominal,Kettlebells,Advanced,8.9,"lower_back, wrist"
+Standing band anti-rotation press,"Stand sideways to an anchored band and press forward while resisting trunk rotation.",Strength,Abdominal,Bands,Beginner,8.8,none
+Seated band rotation,"Sit tall and rotate the torso against light band resistance with a neutral spine.",Strength,Abdominal,Bands,Intermediate,8.0,lower_back
+Dumbbell deadlift,"Hinge at the hips with dumbbells and stand by driving through the floor.",Strength,Back,Dumbbell,Beginner,8.3,"lower_back, knee"
+Supported glute bridge,"Lie on your back with feet planted and lift hips while keeping ribs down.",Strength,Glutes,Bodyweight,Beginner,8.4,none
+Low impact march,"March in place at a comfortable cadence while maintaining posture.",Cardio,Full Body,Bodyweight,Beginner,7.9,knee

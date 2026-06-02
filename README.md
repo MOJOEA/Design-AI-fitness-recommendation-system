@@ -41,8 +41,15 @@ The system never creates exercise names in the recommender. Recommendations are 
 
 ---
 
+# ระบบแนะนำท่าออกกำลังกายอัจฉริยะ (Personalized Fitness AI Recommendation System)
+
+โมดูลนี้คือระบบท่อส่งข้อมูลการแนะนำท่าออกกำลังกาย (Recommendation Pipeline) แบบ **Zero-Hallucination (การันตีข้อมูลไม่หลอน)** สำหรับธุรกิจฟิตเนส โดยมีการแยกส่วนหน้าที่การทำงานกับโมเดลภาษา (LLM) อย่างชัดเจน: ในส่วนของการถอดรหัสคำสั่ง (Parsing) สามารถสลับไปใช้โมเดล NLP ภายนอกได้ และข้อความสรุปผลสุดท้าย (Final Wording) สามารถปรับแต่งด้วย Language Model ได้ แต่ส่วนการคัดกรองข้อมูลคลังท่าทาง (Catalog Filtering) และเงื่อนไขข้อยกเว้นการบาดเจ็บ (Injury Exclusions) จะทำงานอยู่บน **Deterministic Python Business Logic** ที่แม่นยำ 100%
+
+---
+
 ## 📂 โครงสร้างไฟล์ (Project Structure)
 
+```bash
 DESIGN-AI-FITNESS-RECOMMENDATION-SYSTEM/
 ├── .venv/                         # Virtual Environment ของ Python
 ├── fitness_ai/                    # โฟลเดอร์ซอร์สโค้ดหลักของระบบ
@@ -57,6 +64,7 @@ DESIGN-AI-FITNESS-RECOMMENDATION-SYSTEM/
 └── tests/                         # โฟลเดอร์ชุดทดสอบระบบ
     ├── conftest.py                # ไฟล์ตั้งค่า Root Path สำหรับ Pytest
     └── test_fitness_ai.py         # ชุดทดสอบระบบคัดกรองและความปลอดภัย
+```
 
 ## อธิบายไฟล์การทำงาน (Module Responsibilities)
 
